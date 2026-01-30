@@ -2,7 +2,7 @@
 const nextConfig = {
 	// uncomment for build
 
-	// output: 'export',
+	output: 'export',
 	// trailingSlash: true,
 	// basePath: '/expo', // For local Apache
 
