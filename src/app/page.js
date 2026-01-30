@@ -281,7 +281,7 @@ export default function Home() {
 	return (
 		<main className='grid h-screen items-center justify-between w-full overflow-y-visible overflow-x-hidden'>
 			{/* Hero */}
-			<div className='w-full h-svh grid grid-flow-col items-center justify-center gap-6 px-8 lg:px-48'>
+			<div className='w-full h-svh flex lg:flex-row flex-wrap items-center justify-center gap-6 px-8 lg:px-48'>
 				<div className=''>
 					<div className=''>
 						<h1 className='font-bold text-4xl text-left'>Koome Franklin</h1>
