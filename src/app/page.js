@@ -224,8 +224,8 @@ export default function Home() {
 			image: '',
 			link: '',
 		},
-		{ id: 4, name: 'Expo Website', description: '', image: '', link: '' },
-		{ id: 5, name: 'Hotel Website', description: '', image: '', link: '' },
+		{ id: 4, name: 'Expo Website', description: '', image: '', link: 'https://expo.kise.ac.ke/' },
+		{ id: 5, name: 'Hotel Website', description: '', image: '', link: 'https://hotel.kise.ac.ke/' },
 		{
 			id: 6,
 			name: 'E-Commerce Web Application',
