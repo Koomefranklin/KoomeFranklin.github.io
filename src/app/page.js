@@ -208,18 +208,38 @@ export default function Home() {
 			name: 'Attendance Management System (Final Year Project)',
 			description: '',
 			image: '',
+			link: '',
 		},
-		{ id: 2, name: 'Gowns Issuance System', description: '', image: '' },
+		{
+			id: 2,
+			name: 'Gowns Issuance System',
+			description: '',
+			image: '',
+			link: '',
+		},
 		{
 			id: 3,
 			name: 'Expo Registration System (QR-based)',
 			description: '',
 			image: '',
+			link: '',
 		},
-		{ id: 4, name: 'Expo Website', description: '', image: '' },
-		{ id: 5, name: 'Hotel Website', description: '', image: '' },
-		{ id: 6, name: 'E-Commerce Web Application', description: '', image: '' },
-		{ id: 7, name: 'Project Management System', description: '', image: '' },
+		{ id: 4, name: 'Expo Website', description: '', image: '', link: '' },
+		{ id: 5, name: 'Hotel Website', description: '', image: '', link: '' },
+		{
+			id: 6,
+			name: 'E-Commerce Web Application',
+			description: '',
+			image: '',
+			link: '',
+		},
+		{
+			id: 7,
+			name: 'Project Management System',
+			description: '',
+			image: '',
+			link: '',
+		},
 	];
 	const engangements = [
 		{
@@ -278,18 +298,30 @@ export default function Home() {
 					<div className='grid grid-flow-col gap-6'>
 						<button
 							title='View Projects'
-							className='p-2 rounded-md  bg-[#2AB090] text-white'>
-							<Link href='#projects'>View Projects</Link>
+							className='rounded-md  bg-[#2AB090] text-white font-bold'>
+							<Link
+								href='#projects'
+								className='flex p-2 text-center'>
+								View Projects
+							</Link>
 						</button>
 						<button
 							title='Download CV'
-							className='p-2 rounded-md bg-[#2AB090] text-white'>
-							<Link href=''>Download CV</Link>
+							className='rounded-md bg-[#2AB090] text-white font-bold'>
+							<Link
+								href='#'
+								className='flex p-2 text-center'>
+								Download CV
+							</Link>
 						</button>
 						<button
 							title='Contact Me'
-							className='p-2 rounded-md bg-[#2AB090] text-white'>
-							<Link href='#contact'>Contact Me</Link>
+							className='rounded-md bg-[#2AB090] text-white font-bold'>
+							<Link
+								href='#contact'
+								className='flex p-2 text-center '>
+								Contact Me
+							</Link>
 						</button>
 					</div>
 				</div>
@@ -307,18 +339,32 @@ export default function Home() {
 				{/* Nav */}
 				<div className='w-full sticky top-0 left-0 min-h-12 z-10 px-4 bg-[#1B1B1B] text-white'>
 					<div className='w-full h-full justify-around flex flex-nowrap gap-2'>
-						<button className='p-2'>About Me</button>
-						<button className='p-2'>Snapshot</button>
-						<button className='p-2'>Skills</button>
-						<button className='p-2'>Experience</button>
-						<button className='p-2'>Software Projects</button>
-						<button className='p-2'>Contact Me</button>
+						<button className='p-2'>
+							<Link href='#about'>About Me</Link>
+						</button>
+						<button className='p-2'>
+							<Link href='#snapshot'>Snapshot</Link>
+						</button>
+						<button className='p-2'>
+							<Link href='#skills'>Skills</Link>
+						</button>
+						<button className='p-2'>
+							<Link href='#experience'>Experience</Link>
+						</button>
+						<button className='p-2'>
+							<Link href='#projects'>Software Projects</Link>
+						</button>
+						<button className='p-2'>
+							<Link href='#contact'>Contact Me</Link>
+						</button>
 					</div>
 				</div>
 				<div className='lg:w-2/3 md:w-5/6 w-5/6 grid self-center place-self-center'>
 					{/* About Me */}
 
-					<div className=''>
+					<div
+						className=''
+						id='about'>
 						<p className='text-center font-bold text-2xl'>What I Do</p>
 						<div className='grid lg:grid-flow-col gap-2'>
 							<div className='shadow-lg p-2'>
@@ -372,7 +418,9 @@ export default function Home() {
 						</div>
 					</div>
 					{/* Professional Snapshot */}
-					<div className='px-10 py-2 w-full shadow-lg'>
+					<div
+						className='px-10 py-2 w-full shadow-lg'
+						id='snapshot'>
 						<h2 className='text-center font-bold text-2xl'>
 							Professional Snapshot
 						</h2>
@@ -457,7 +505,9 @@ export default function Home() {
 					</div>
 
 					{/* Skills & Technologies */}
-					<div className='px-10 py-2 w-full'>
+					<div
+						className='px-10 py-2 w-full'
+						id='skills'>
 						<h2 className='text-center font-bold text-2xl'>
 							Skills & Technologies
 						</h2>
@@ -513,7 +563,9 @@ export default function Home() {
 						</div>
 					</div>
 					{/* Professional Experience */}
-					<div className='px-10 py-2 w-full shadow-lg'>
+					<div
+						className='px-10 py-2 w-full shadow-lg'
+						id='experience'>
 						<h2 className='text-center font-bold text-2xl'>Work Experience</h2>
 						<ul className='indent-2 list-disc'>
 							<li>
@@ -544,7 +596,9 @@ export default function Home() {
 						</ul>
 					</div>
 					{/* Software Projects */}
-					<div className='px-10 py-2 w-full'>
+					<div
+						className='px-10 py-2 w-full'
+						id='projects'>
 						<h2 className='text-center font-bold text-2xl'>
 							Software Projects
 						</h2>
@@ -697,8 +751,10 @@ export default function Home() {
 							Collaboration with non-technical users
 						</div>
 					</div>
-					{/* Contact & Call to Action */}
-					<div className='px-10 py-2 w-5/6 self-center'>
+					{/* Contact*/}
+					<div
+						className='px-10 py-2 w-5/6 self-center'
+						id='contact'>
 						<h2 className='text-center font-bold text-2xl'>Get In Touch</h2>
 						<div className=''>
 							<div className='grid gap-4 grid-flow-col justify-center'>
@@ -732,8 +788,8 @@ export default function Home() {
 									<FcDownload size={32} />
 								</button>
 								{/* (Software / Systems or Combined) */}
-								{/* contact form */}
 							</div>
+							{/* contact form */}
 							<form className='grid gap-4 shadow-lg place-self-center w-full p-4'>
 								<label htmlFor='name'>Name:</label>
 								<input
