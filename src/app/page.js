@@ -208,37 +208,42 @@ export default function Home() {
 			name: 'Attendance Management System (Final Year Project)',
 			description: '',
 			image: '',
-			link: '',
+			link: 'https://github.com/Koomefranklin/Flask-Attendance-System',
 		},
 		{
 			id: 2,
 			name: 'Gowns Issuance System',
 			description: '',
 			image: '',
-			link: '',
+			link: 'https://github.com/Koomefranklin/kise-regalia-django',
 		},
 		{
 			id: 3,
-			name: 'Expo Registration System (QR-based)',
+			name: 'Expo Website & Registration System (QR-based)',
 			description: '',
 			image: '',
-			link: '',
+			link: 'https://expo.kise.ac.ke/',
 		},
-		{ id: 4, name: 'Expo Website', description: '', image: '', link: 'https://expo.kise.ac.ke/' },
-		{ id: 5, name: 'Hotel Website', description: '', image: '', link: 'https://hotel.kise.ac.ke/' },
+		{
+			id: 5,
+			name: 'Hotel Website',
+			description: '',
+			image: '',
+			link: 'https://hotel.kise.ac.ke/',
+		},
 		{
 			id: 6,
 			name: 'E-Commerce Web Application',
 			description: '',
 			image: '',
-			link: '',
+			link: 'https://github.com/Koomefranklin/e-commercefrontend',
 		},
 		{
 			id: 7,
 			name: 'Project Management System',
 			description: '',
 			image: '',
-			link: '',
+			link: 'https://github.com/Koomefranklin/kise-projects',
 		},
 	];
 	const engangements = [
@@ -316,7 +321,7 @@ export default function Home() {
 						</button>
 						<button
 							title='Contact Me'
-							className='rounded-md bg-[#2AB090] text-white font-bold'>
+							className='rounded-md bg-primary text-white font-bold'>
 							<Link
 								href='#contact'
 								className='flex p-2 text-center '>
@@ -375,12 +380,12 @@ export default function Home() {
 									whatIDo['Software Development'].map((item) => (
 										<div
 											key={item.id}
-											className='flex flex-row p-4 gap-3 shadow-md'>
+											className='flex flex-col lg:flex-row p-4 gap-3 items-center shadow-md'>
 											<Image
 												src={item.image}
 												alt={item.name}
-												width={200}
-												height={200}
+												width={300}
+												height={300}
 											/>
 											<div className=''>
 												<h3 className='font-bold text-lg self-center'>
@@ -399,7 +404,7 @@ export default function Home() {
 									whatIDo['Network Administration'].map((item) => (
 										<div
 											key={item.id}
-											className='flex flex-row p-4 gap-3 shadow-md'>
+											className='flex flex-col lg:flex-row p-4 gap-3 items-center shadow-md'>
 											<div className=''>
 												<h3 className='font-bold text-lg self-center'>
 													{item.name}
@@ -409,8 +414,8 @@ export default function Home() {
 											<Image
 												src={item.image}
 												alt={item.name}
-												width={200}
-												height={200}
+												width={300}
+												height={300}
 											/>
 										</div>
 									))}
@@ -724,12 +729,12 @@ export default function Home() {
 									engangements.map((engagement) => (
 										<div
 											key={engagement.id}
-											className='flex flex-row p-4 shadow-lg gap-2'>
+											className='flex flex-col lg:flex-row p-4 items-center shadow-lg gap-2'>
 											<Image
 												src={engagement.image}
 												alt={engagement.name}
-												width={200}
-												height={200}
+												width={300}
+												height={300}
 											/>
 											<div className=''>
 												<h3 className='font-bold'>{engagement.name}</h3>
@@ -753,10 +758,10 @@ export default function Home() {
 					</div>
 					{/* Contact*/}
 					<div
-						className='px-10 py-2 w-5/6 self-center'
+						className='grid px-10 py-2 w-5/6 self-center'
 						id='contact'>
 						<h2 className='text-center font-bold text-2xl'>Get In Touch</h2>
-						<div className=''>
+						<div className='grid self-center'>
 							<div className='grid gap-4 grid-flow-col justify-center'>
 								<Link
 									href='mailto:frankoomef@gmail.com'
@@ -790,7 +795,7 @@ export default function Home() {
 								{/* (Software / Systems or Combined) */}
 							</div>
 							{/* contact form */}
-							<form className='grid gap-4 shadow-lg place-self-center w-full p-4'>
+							<form className='grid gap-4 shadow-lg w-full p-4'>
 								<label htmlFor='name'>Name:</label>
 								<input
 									type='text'
