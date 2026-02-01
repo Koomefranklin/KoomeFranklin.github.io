@@ -1,6 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@theme {
+	--color-primary: #1c1c1e;
+	--color-secondary: #2ab090;
+	--color-accent: #f7f5f6;
+	--color-header: #3a3a3c;
+	--color-card: #2c2c2e;
+}
 
 :root {
 	--foreground-rgb: 0, 0, 0;
@@ -14,13 +19,6 @@
 		--background-start-rgb: 0, 0, 0;
 		--background-end-rgb: 0, 0, 0;
 	}
-}
-@theme {
-	--color-primary: #1c1c1e;
-	--color-secondary: #00ffff;
-	--color-accent: #f7f5f6;
-	--color-header: #3a3a3c;
-	--color-card: #2c2c2e;
 }
 
 body {

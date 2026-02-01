@@ -303,7 +303,7 @@ export default function Home() {
 					<div className='grid grid-flow-col gap-6'>
 						<button
 							title='View Projects'
-							className='rounded-md  bg-[#2AB090] text-white font-bold'>
+							className='rounded-md  bg-secondary text-white font-bold'>
 							<Link
 								href='#projects'
 								className='flex p-2 text-center'>
@@ -312,7 +312,7 @@ export default function Home() {
 						</button>
 						<button
 							title='Download CV'
-							className='rounded-md bg-[#2AB090] text-white font-bold'>
+							className='rounded-md bg-secondary text-white font-bold'>
 							<Link
 								href='#'
 								className='flex p-2 text-center'>
@@ -321,7 +321,7 @@ export default function Home() {
 						</button>
 						<button
 							title='Contact Me'
-							className='rounded-md bg-primary text-white font-bold'>
+							className='rounded-md bg-secondary text-white font-bold'>
 							<Link
 								href='#contact'
 								className='flex p-2 text-center '>
@@ -342,7 +342,7 @@ export default function Home() {
 			</div>
 			<div className='grid w-full'>
 				{/* Nav */}
-				<div className='w-full sticky top-0 left-0 min-h-12 z-10 px-4 bg-[#1B1B1B] text-white'>
+				<div className='w-full sticky top-0 left-0 min-h-12 z-10 px-4 bg-primary text-white'>
 					<div className='w-full h-full justify-around flex flex-nowrap gap-2'>
 						<button className='p-2'>
 							<Link href='#about'>About Me</Link>
@@ -370,7 +370,9 @@ export default function Home() {
 					<div
 						className=''
 						id='about'>
-						<p className='text-center font-bold text-2xl'>What I Do</p>
+						<p className='text-center font-bold text-2xl text-secondary'>
+							What I Do
+						</p>
 						<div className='grid lg:grid-flow-col gap-2'>
 							<div className='shadow-lg p-2'>
 								<h3 className='text-center font-bold text-lg'>
@@ -426,7 +428,7 @@ export default function Home() {
 					<div
 						className='px-10 py-2 w-full shadow-lg'
 						id='snapshot'>
-						<h2 className='text-center font-bold text-2xl'>
+						<h2 className='text-center font-bold text-2xl text-secondary'>
 							Professional Snapshot
 						</h2>
 						<div className='grid gap-2 justify-between'>
@@ -513,13 +515,13 @@ export default function Home() {
 					<div
 						className='px-10 py-2 w-full'
 						id='skills'>
-						<h2 className='text-center font-bold text-2xl'>
+						<h2 className='text-center font-bold text-2xl text-secondary'>
 							Skills & Technologies
 						</h2>
 						<div className='grid gap-2 justify-around'>
-							<div className=''>
+							<div className='w-full'>
 								<p className='font-bold text-lg'>Software Engineering Skills</p>
-								<div className='flex flex-wrap gap-4'>
+								<div className='grid lg:grid-flow-col gap-4'>
 									{skills &&
 										skills['Software Development Skills'].map(
 											(skillCategory) => (
@@ -542,9 +544,9 @@ export default function Home() {
 										)}
 								</div>
 							</div>
-							<div className=''>
+							<div className='w-full'>
 								<p className='font-bold text-lg'>Systems & Network Skills</p>
-								<div className='flex flex-wrap gap-4'>
+								<div className='grid lg:grid-flow-col gap-4 w-full'>
 									{skills &&
 										skills['Systems & Network Skills'].map((skillCategory) => (
 											<div
@@ -571,7 +573,9 @@ export default function Home() {
 					<div
 						className='px-10 py-2 w-full shadow-lg'
 						id='experience'>
-						<h2 className='text-center font-bold text-2xl'>Work Experience</h2>
+						<h2 className='text-center font-bold text-2xl text-secondary'>
+							Work Experience
+						</h2>
 						<ul className='indent-2 list-disc'>
 							<li>
 								ICT Assistant — KISE (July 2024 – Present)
@@ -604,7 +608,7 @@ export default function Home() {
 					<div
 						className='px-10 py-2 w-full'
 						id='projects'>
-						<h2 className='text-center font-bold text-2xl'>
+						<h2 className='text-center font-bold text-2xl text-secondary'>
 							Software Projects
 						</h2>
 						<div className='overflow-x-hidden w-full'>
@@ -720,7 +724,7 @@ export default function Home() {
 					</div>
 					{/* Infrastructure & Technical Engagements */}
 					<div className='px-10 py-2 w-full'>
-						<h2 className='text-center font-bold text-2xl'>
+						<h2 className='text-center font-bold text-2xl text-secondary'>
 							Infrastructure & Technical Engagements
 						</h2>
 						<div className=''>
@@ -760,7 +764,9 @@ export default function Home() {
 					<div
 						className='grid px-10 py-2 w-5/6 self-center'
 						id='contact'>
-						<h2 className='text-center font-bold text-2xl'>Get In Touch</h2>
+						<h2 className='text-center font-bold text-2xl text-secondary'>
+							Get In Touch
+						</h2>
 						<div className='grid self-center'>
 							<div className='grid gap-4 grid-flow-col justify-center'>
 								<Link
