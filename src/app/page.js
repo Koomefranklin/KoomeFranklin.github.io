@@ -205,44 +205,50 @@ export default function Home() {
 	const projects = [
 		{
 			id: 1,
-			name: 'Attendance Management System (Final Year Project)',
-			description: '',
-			image: '',
+			name: 'Flask Attendance System — Lightweight Attendance Tracking App',
+			description:
+				'A Flask-based web attendance system with user authentication, attendance recording, and administrative views — built for lightweight, practical attendance tracking.',
+			page: '/flask-attendance',
 			link: 'https://github.com/Koomefranklin/Flask-Attendance-System',
 		},
 		{
 			id: 2,
-			name: 'Gowns Issuance System',
-			description: '',
-			image: '',
+			name: 'KISE Regalia Issuance System',
+			description:
+				'A Django-based regalia management system enabling administrators and students to manage orders and inventory for graduation attire. Built with Python, Django, and Django’s templating system, focusing on modular architecture and clear business workflows.',
+			page: '/kise-regalia',
 			link: 'https://github.com/Koomefranklin/kise-regalia-django',
 		},
 		{
 			id: 3,
-			name: 'Expo Website & Registration System (QR-based)',
-			description: '',
-			image: '',
+			name: 'KISE Expo — Full-Stack Event Registration & Experience Platform',
+			description:
+				'A full-stack event platform combining a Next.js frontend with a Django REST API to manage expo content and participant registration through a decoupled, scalable architecture.',
+			page: '/kise-expo',
 			link: 'https://expo.kise.ac.ke/',
 		},
 		{
 			id: 5,
-			name: 'Hotel Website',
-			description: '',
-			image: '',
+			name: 'KISE ARC Hotel Website — WordPress Hospitality Site',
+			description:
+				'A WordPress‑powered hospitality website for KISE ARC Hotel, designed to showcase accommodations, conference facilities, dining, and outdoor spaces with clear service descriptions and contact pathways.',
+			page: '/kise-hotel',
 			link: 'https://hotel.kise.ac.ke/',
 		},
 		{
 			id: 6,
-			name: 'E-Commerce Web Application',
-			description: '',
-			image: '',
+			name: 'Full‑Stack E‑Commerce Platform',
+			description:
+				'A full‑stack e‑commerce web application with a React frontend and a Django REST API backend, enabling product browsing and commerce workflows through a modular and scalable architecture',
+			page: '/ecommerce',
 			link: 'https://github.com/Koomefranklin/e-commercefrontend',
 		},
 		{
 			id: 7,
-			name: 'Project Management System',
-			description: '',
-			image: '',
+			name: 'KISE Results & Teaching Practice Management System',
+			description:
+				'A Django-based backend system for managing academic results and teaching practice records, designed with modular applications and RESTful APIs to replace manual, paper-based institutional workflows.',
+			page: '/kise-results',
 			link: 'https://github.com/Koomefranklin/kise-projects',
 		},
 	];
