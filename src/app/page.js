@@ -82,28 +82,35 @@ export default function Home() {
 				name: 'Design and build web applications',
 				image: '/webapp.webp',
 				description:
-					'Designed and developed production-ready web applications using Django, Flask, React, and Next.js, focusing on clean architecture, usability, and maintainability in institutional environments.',
+					'Design and develop production-ready web applications using Django, Flask, React, and Next.js, with a focus on clean architecture, usability, and maintainability in institutional environments.',
 			},
 			{
 				id: 2,
 				name: 'System digitization and automation',
 				image: '/automation.jpg',
 				description:
-					'Digitized manual and paper-based workflows into secure, web-based systems, improving process efficiency, data accuracy, and traceability across institutional operations.',
+					'Digitize manual and paper-based workflows into secure, web-based systems to improve process efficiency, data accuracy, and traceability across institutional operations.',
+			},
+			{
+				id: 5,
+				name: 'Application customization & maintenance (Moodle)',
+				image: '/Features-of-Moodle.jpg',
+				description:
+					'Customize, configure, and maintain Moodle learning management system, including user roles, plugins, themes, updates, and ongoing operational support in institutional environments.',
 			},
 			{
 				id: 3,
 				name: 'API-driven systems',
 				image: '/api.png',
 				description:
-					'Designed and implemented RESTful APIs to support modular, scalable systems and enable seamless integration between frontend applications and backend services.',
+					'Design and implement RESTful APIs to support modular, scalable systems and enable seamless integration between frontend applications and backend services.',
 			},
 			{
 				id: 4,
 				name: 'Database-backed applications',
 				image: '/db.webp',
 				description:
-					'Built applications backed by relational databases (PostgreSQL, MySQL, SQLite), implementing proper data models, validations, and queries to ensure performance and data integrity.',
+					'Build applications backed by relational databases (PostgreSQL, MySQL, SQLite), implementing proper data models, validations, and queries to ensure performance and data integrity.',
 			},
 		],
 		'Network Administration': [
@@ -112,28 +119,28 @@ export default function Home() {
 				name: 'Network design and implementation',
 				image: '/networking.png',
 				description:
-					'Designed and deployed LAN infrastructures including IP addressing, VLAN segmentation, switching, and routing to deliver reliable and well-structured network connectivity.',
+					'Design and deploy LAN infrastructures, including IP addressing, VLAN segmentation, switching, and routing, to deliver reliable and well-structured network connectivity.',
 			},
 			{
 				id: 2,
 				name: 'Firewall and security configuration',
 				image: '/firewall.webp',
 				description:
-					'Configured and managed firewall and network security controls, including routing, NAT, and access rules, to protect internal resources and regulate network traffic.',
+					'Configure and manage firewall and network security controls, including routing, NAT, and access rules, to protect internal resources and regulate network traffic.',
 			},
 			{
 				id: 3,
 				name: 'Server deployment and maintenance',
 				image: '/serverman.jpg',
 				description:
-					'Installed, configured, and maintained Windows and Linux servers, ensuring system availability, performance monitoring, backups, and routine maintenance.',
+					'Install, configure, and maintain Windows and Linux servers, ensuring system availability, performance monitoring, backups, and routine maintenance.',
 			},
 			{
 				id: 4,
 				name: 'End-user and institutional ICT support',
 				image: '/support.png',
 				description:
-					'Provided day-to-day ICT support to end users in office and lab environments, resolving hardware, software, and connectivity issues while supporting system adoption and training.',
+					'Provide day-to-day ICT support to end users in office and lab environments, resolving hardware, software, and connectivity issues while supporting system adoption and training.',
 			},
 		],
 	};
@@ -435,7 +442,7 @@ export default function Home() {
 						className='px-10 py-2 w-full shadow-lg'
 						id='snapshot'>
 						<h2 className='text-center font-bold text-2xl text-secondary'>
-							Professional Snapshot
+							Snapshot
 						</h2>
 						<div className='grid gap-2 justify-between'>
 							<div className=''>
